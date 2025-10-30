@@ -55,8 +55,8 @@ if len(argv) > 1:
     if(file_path.exists()):
         try:
             logs = load_logs(file_path)
-            count_logs = count_logs_by_level(logs)
-            display_log_counts(count_logs)
+            log_counts = count_logs_by_level(logs)
+            display_log_counts(log_counts)
             if(level):
                 logs_filtered = filter_logs_by_level(logs, level)
                 if len(logs_filtered):
